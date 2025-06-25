@@ -26,3 +26,6 @@ management:
 spring:
   zipkin:
     base-url: http://localhost:9411
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
