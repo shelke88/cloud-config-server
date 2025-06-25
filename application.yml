@@ -18,6 +18,8 @@ microservices:
     endpoints:
       endpoint:
         url: http://ORDER-SERVICE/order/createOrder
+
+#Micromiter and zipkin configuration
 management:
   tracing:
     sampling:
